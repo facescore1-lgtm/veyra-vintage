@@ -396,6 +396,7 @@ function serveStatic(req, res, parsed) {
 const server = http.createServer(async (req, res) => {
   try {
     const parsed = new URL(req.url, `http://${req.headers.host || "localhost"}`);
+    if (req.method === "HEAD") req.method = "GET";
     if (parsed.pathname.startsWith("/api/")) {
       if (req.method === "OPTIONS") {
         return send(res, 204, "", { "Access-Control-Allow-Origin": "*", "Access-Control-Allow-Methods": "GET,POST,PUT,PATCH,DELETE,OPTIONS", "Access-Control-Allow-Headers": "Content-Type, Authorization" });
