@@ -125,7 +125,7 @@
       <a href="/admin.html">Sipariş Takibi</a>
     </div>
     <div><h4>İletişim</h4>
-      <li>destek@VEYRA VINTAGE.com</li>
+      <li>destek@veyravintage.com</li>
       <li>+90 (212) 000 00 00</li>
       <li>İstanbul, TR</li>
       <a href="/admin.html">Instagram</a>
