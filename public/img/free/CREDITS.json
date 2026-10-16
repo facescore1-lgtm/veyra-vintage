@@ -1,0 +1,16 @@
+{
+  "license": "CC0 1.0 Universal (kamu malı — atıf zorunlu değil, ücretsiz kullanım)",
+  "source": "Openverse (api.openverse.org) üzerinden CC0 filtresiyle bulundu",
+  "fonts": [
+    { "name": "Archivo", "license": "SIL Open Font License 1.1", "source": "Google Fonts" },
+    { "name": "Space Mono", "license": "SIL Open Font License 1.1", "source": "Google Fonts" }
+  ],
+  "images": [
+    { "file": "hero-denim.webp", "title": "Blue background, denim texture design", "source": "Rawpixel", "license": "CC0" },
+    { "file": "tile-jean.webp", "title": "Denim Jeans Pocket", "source": "Rawpixel", "license": "CC0" },
+    { "file": "tile-ust.jpg", "title": "Aria Hoodie with Earphones", "source": "Flickr", "license": "CC0" },
+    { "file": "tile-dis.webp", "title": "Denim jacket designed Arthur McGee", "source": "Rawpixel / Wikimedia", "license": "CC0" },
+    { "file": "tile-aksesuar.jpg", "title": "Stylish hats and caps street-side collection", "source": "WordPress Photo Directory", "license": "CC0" },
+    { "file": "look-guitar.webp", "title": "Man denim jacket holds guitar", "source": "Rawpixel / Wikimedia", "license": "CC0" }
+  ]
+}

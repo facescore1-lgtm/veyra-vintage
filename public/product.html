@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ürün — VEYRA VINTAGE</title>
+<link rel="stylesheet" href="/css/style.css">
+</head>
+<body data-nav="">
+
+<div class="container">
+  <div class="pdp" id="pdp">
+    <div class="gallery">
+      <div class="thumbs" id="thumbs"></div>
+      <div class="main-img" id="main-img">
+        <img id="main-photo" src="" alt="">
+        <button class="nav-btn prev" aria-label="Önceki">‹</button>
+        <button class="nav-btn next" aria-label="Sonraki">›</button>
+        <span class="idx" id="img-idx">1 / 1</span>
+      </div>
+    </div>
+
+    <div class="pdp-info">
+      <div class="brand" id="p-brand"></div>
+      <h1 id="p-name"></h1>
+      <div class="fit-line" id="p-fit"></div>
+      <div class="pdp-price" id="p-price"></div>
+      <p class="pdp-desc" id="p-desc"></p>
+
+      <div class="opt-title"><span>Renk</span><span id="p-color-name"></span></div>
+      <div class="colors" id="p-colors"></div>
+
+      <div class="opt-title">
+        <span>Beden</span>
+        <a id="open-chart">Ölçü Tablosu ↗</a>
+      </div>
+      <div class="sizes" id="p-sizes"></div>
+      <div class="stock-line" id="p-stock">Beden seç</div>
+
+      <div class="buy-row">
+        <div class="qty">
+          <button id="q-minus">−</button><span id="q-val">1</span><button id="q-plus">+</button>
+        </div>
+        <button class="btn" id="add-btn">Sepete Ekle</button>
+      </div>
+
+      <div class="acc" id="p-acc">
+        <details open id="chart-details">
+          <summary>Beden Ölçü Tablosu</summary>
+          <div class="body">
+            <div class="chart-wrap"><table class="size-chart" id="chart-table"></table></div>
+            <div class="chart-note" id="chart-note"></div>
+          </div>
+        </details>
+        <details>
+          <summary>Detaylar & Kumaş</summary>
+          <div class="body"><ul id="p-features"></ul></div>
+        </details>
+        <details>
+          <summary>Kargo & İade</summary>
+          <div class="body">
+            <ul>
+              <li>16:00'ya kadar verilen siparişler aynı gün kargoda.</li>
+              <li>2.500 ₺ üzeri kargo ücretsiz, altında 89 ₺ sabit ücret.</li>
+              <li>14 gün içinde koşulsuz iade ve beden değişimi.</li>
+              <li>Ödemeler Shopier altyapısı ile güvenle alınır.</li>
+            </ul>
+          </div>
+        </details>
+      </div>
+    </div>
+  </div>
+
+  <section class="section" id="related-section" style="border-bottom:0">
+    <div class="section-head">
+      <div><div class="eyebrow">Tamamla</div><h2 style="margin-top:10px">Benzer Parçalar</h2></div>
+      <a href="/shop.html">Tümünü Gör →</a>
+    </div>
+    <div class="grid" id="related"></div>
+  </section>
+</div>
+
+<script src="/js/app.js"></script>
+<script src="/js/product.js"></script>
+</body>
+</html>

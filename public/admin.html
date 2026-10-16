@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Admin — VEYRA VINTAGE</title>
+<link rel="stylesheet" href="/css/style.css">
+</head>
+<body data-nav="">
+
+<div class="container">
+
+  <div id="login-view" class="hide">
+    <div class="login-box">
+      <div class="eyebrow">Yönetim</div>
+      <h1 style="margin-top:10px">Admin Girişi</h1>
+      <p>Siparişler ve ürün yönetimi için şifre gir</p>
+      <form id="login-form">
+        <div class="field">
+          <label>Şifre</label>
+          <input class="input" type="password" name="password" autocomplete="current-password">
+        </div>
+        <div class="err" id="login-err" style="display:none">Hatalı şifre</div>
+        <button class="btn btn-block" type="submit">Giriş Yap</button>
+      </form>
+      <p style="margin-top:18px;font-size:11px">Şifre ilk açılışta konsola yazılır veya <b>ADMIN_PASSWORD</b> ortam değişkeni ile belirlenir.</p>
+    </div>
+  </div>
+
+  <div id="panel" class="hide">
+    <div class="page-head">
+      <div class="eyebrow">Yönetim Paneli</div>
+      <h1>Merhaba, Admin</h1>
+      <p id="panel-sub">Siparişler, ürünler ve ödeme ayarları</p>
+    </div>
+
+    <div class="admin-bar">
+      <div class="admin-tabs">
+        <button class="on" data-tab="orders">Siparişler</button>
+        <button data-tab="products">Ürünler</button>
+        <button data-tab="settings">Ayarlar</button>
+      </div>
+      <button class="btn btn-ghost btn-sm" id="logout">Çıkış</button>
+    </div>
+
+    <div class="stats" id="stats"></div>
+
+    <!-- ORDERS -->
+    <div id="tab-orders">
+      <div class="shop-bar">
+        <span class="count" id="orders-count">0 sipariş</span>
+        <div class="sort">
+          <label class="count">Durum</label>
+          <select id="order-filter">
+            <option value="">Tümü</option>
+            <option value="yeni">Yeni</option>
+            <option value="hazirlaniyor">Hazırlanıyor</option>
+            <option value="kargoda">Kargoda</option>
+            <option value="teslim_edildi">Teslim Edildi</option>
+            <option value="iptal">İptal</option>
+          </select>
+        </div>
+      </div>
+      <div class="table-wrap">
+        <table class="data" id="orders-table">
+          <thead><tr>
+            <th>Sipariş</th><th>Müşteri</th><th>Ürünler</th><th>Tutar</th><th>Ödeme</th><th>Kargo</th><th>Durum</th>
+          </tr></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+      <div class="empty hide" id="orders-empty"><div class="big">Sipariş Yok</div><p>İlk sipariş düştüğünde burada görünecek</p></div>
+    </div>
+
+    <!-- PRODUCTS -->
+    <div id="tab-products" class="hide">
+      <div class="shop-bar">
+        <span class="count" id="products-count">0 ürün</span>
+        <button class="btn btn-sm" id="add-product">+ Ürün Ekle</button>
+      </div>
+      <div class="table-wrap">
+        <table class="data" id="products-table">
+          <thead><tr><th>Görsel</th><th>Ürün</th><th>Fiyat</th><th>Bedenler</th><th>Stok</th><th>İşlem</th></tr></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+      <div class="empty hide" id="products-empty">
+        <div class="big">Ürün Yok</div><p>İlk ürününü ekle — beden ölçü tablosu ve görsellerle</p>
+      </div>
+    </div>
+
+    <!-- SETTINGS -->
+    <div id="tab-settings" class="hide">
+      <div class="grid-2" style="align-items:start;gap:20px">
+        <div class="form-card">
+          <h2>Shopier Ödeme</h2>
+          <div class="field">
+            <label>Durum</label>
+            <select id="s-enabled"><option value="true">Aktif</option><option value="false">Kapalı (test modu)</option></select>
+          </div>
+          <div class="field">
+            <label>Shopier Ürün ID</label>
+            <input class="input" id="s-product-id" placeholder="0000000">
+            <div class="help">Shopier panelindeki ürün sayfasının ID numarası</div>
+          </div>
+          <div class="field">
+            <label>Satıcı / Affiliate Kullanıcı Adı</label>
+            <input class="input" id="s-affiliate" placeholder="kullaniciadi">
+            <div class="help">shopier.com hesap kullanıcı adınız</div>
+          </div>
+          <div class="field">
+            <label>Dönüş Adresi</label>
+            <input class="input" id="s-return" placeholder="http://localhost:3000/success.html">
+          </div>
+          <button class="btn" id="save-shopier">Kaydet</button>
+        </div>
+
+        <div class="form-card">
+          <h2>Kargo & Admin</h2>
+          <div class="row-2">
+            <div class="field"><label>Ücretsiz Kargo Limiti (₺)</label><input class="input" id="s-freeover" type="number"></div>
+            <div class="field"><label>Kargo Ücreti (₺)</label><input class="input" id="s-fee" type="number"></div>
+          </div>
+          <div class="field">
+            <label>Kargo Firmaları</label>
+            <input class="input" id="s-companies" placeholder="Yurtiçi Kargo, Aras Kargo">
+            <div class="help">Virgülle ayırın</div>
+          </div>
+          <div class="field">
+            <label>Admin Şifresi</label>
+            <input class="input" id="s-password" type="text">
+          </div>
+          <button class="btn" id="save-shipping">Kaydet</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- PRODUCT MODAL -->
+<div class="modal" id="product-modal">
+  <div class="modal-box">
+    <h3><span id="modal-title">Ürün Ekle</span><button id="modal-close">✕</button></h3>
+    <form id="product-form">
+      <div class="grid-2">
+        <div class="field"><label>Ürün Adı <span class="req">*</span></label><input class="input" name="name" placeholder="Vintage Bootcut Jeans"></div>
+        <div class="field"><label>Ürün ID</label><input class="input" name="id" placeholder="Otomatik (VD-XXXX)"></div>
+      </div>
+      <div class="grid-3">
+        <div class="field"><label>Marka</label><input class="input" name="brand" placeholder="VEYRA VINTAGE Original"></div>
+        <div class="field"><label>Model / Kalıp</label><input class="input" name="model" placeholder="Bootcut"></div>
+        <div class="field"><label>Kategori</label>
+          <select name="category">
+            <option value="jean">Jean</option>
+            <option value="ust-giyim">Üst Giyim</option>
+            <option value="dis-giyim">Dış Giyim</option>
+            <option value="aksesuar">Aksesuar</option>
+          </select>
+        </div>
+      </div>
+      <div class="grid-3">
+        <div class="field"><label>Fiyat (₺) <span class="req">*</span></label><input class="input" name="price" type="number" min="0"></div>
+        <div class="field"><label>Eski Fiyat (₺)</label><input class="input" name="oldPrice" type="number" min="0"></div>
+        <div class="field"><label>Kalıp</label><input class="input" name="fit" placeholder="Regular — kalçadan hafif dar"></div>
+      </div>
+
+      <div class="grid-2">
+        <div class="field">
+          <label>Bedenler & Stok</label>
+          <textarea class="input" name="sizes" rows="5" placeholder="W30/L32=9&#10;W32/L32=6&#10;S=5"></textarea>
+          <div class="help">Her satıra bir beden: BEDEN=adet · stok girilmezse sınırsız</div>
+        </div>
+        <div class="field">
+          <label>Renkler</label>
+          <textarea class="input" name="colors" rows="5" placeholder="Raw Indigo|#2e4370&#10;Faded Black|#1c1c22"></textarea>
+          <div class="help">Her satıra: RENK|HEX</div>
+        </div>
+      </div>
+
+      <div class="field">
+        <label>Açıklama</label>
+        <textarea class="input" name="description" rows="3" placeholder="Kumaş, kalıp, yıkama..."></textarea>
+      </div>
+      <div class="field">
+        <label>Özellikler</label>
+        <textarea class="input" name="features" rows="4" placeholder="13.5 oz rigid denim&#10;Çapraz dikişli arka cep"></textarea>
+        <div class="help">Her satıra bir özellik</div>
+      </div>
+
+      <div class="field" style="border:1px solid var(--line);padding:16px;border-radius:4px">
+        <label style="color:#fff">Beden Ölçü Tablosu</label>
+        <div class="grid-2" style="margin-top:10px">
+          <div>
+            <input class="input" name="chartColumns" placeholder="Beden, Bel, Basen, Boy, Paça Genişliği">
+            <div class="help">Sütun adları — virgülle</div>
+          </div>
+          <div>
+            <input class="input" name="chartUnit" placeholder="cm">
+            <div class="help">Birim</div>
+          </div>
+        </div>
+        <textarea class="input" name="chartRows" rows="4" style="margin-top:12px" placeholder="W30/L32 | 77 | 96 | 104 | 24&#10;W32/L32 | 82 | 101 | 110 | 25"></textarea>
+        <div class="help">Her satıra bir ölçü — değerleri " | " ile ayırın</div>
+        <input class="input" name="chartNote" style="margin-top:12px" placeholder="Tablo notu (opsiyonel)">
+      </div>
+
+      <div class="field">
+        <label>Ürün Görselleri</label>
+        <div style="display:flex;gap:10px;flex-wrap:wrap;align-items:center">
+          <label class="btn btn-ghost btn-sm" style="cursor:pointer">Görsel Yükle<input type="file" id="img-upload" accept="image/*" multiple class="hide"></label>
+          <input class="input" name="imageUrl" placeholder="https://... veya /img/..." style="max-width:340px">
+          <button type="button" class="btn btn-ghost btn-sm" id="add-url">URL Ekle</button>
+        </div>
+        <div class="img-thumbs" id="img-list"></div>
+        <div class="help">İlk görsel kartta görünür. Görsel eklenmezse sistem otomatik illüstrasyon üretir (garment türü seçiliyse).</div>
+      </div>
+
+      <div class="grid-3">
+        <div class="field"><label>Görsel Türü (otomatik illüstrasyon)</label>
+          <select name="garment">
+            <option value="">Kapalı — sadece yüklediğim görseller</option>
+            <option value="jeans">Jean</option>
+            <option value="jacket">Ceket / Overshirt</option>
+            <option value="hoodie">Hoodie</option>
+            <option value="tee">T-Shirt</option>
+            <option value="cap">Şapka</option>
+          </select>
+        </div>
+        <div class="field"><label>Etiketler</label>
+          <div style="display:flex;gap:18px;padding-top:10px">
+            <label class="check"><input type="checkbox" name="featured"> Öne çıkan</label>
+            <label class="check"><input type="checkbox" name="isNew"> Yeni</label>
+          </div>
+        </div>
+        <div class="field"><label>Stok / Fiyat özeti</label><div class="help" id="form-hint">Yeni ürün kaydedilecek</div></div>
+      </div>
+
+      <div style="display:flex;gap:12px;justify-content:flex-end;margin-top:10px">
+        <button type="button" class="btn btn-ghost" id="modal-cancel">Vazgeç</button>
+        <button class="btn" type="submit">Kaydet</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+<script src="/js/app.js"></script>
+<script src="/js/admin.js"></script>
+</body>
+</html>

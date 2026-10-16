@@ -1,0 +1,467 @@
+[
+  {
+    "id": "VZ-101",
+    "slug": "vintage-bootcut-jeans-indigo",
+    "name": "Vintage Bootcut Jeans",
+    "brand": "VEYRA VINTAGE Original",
+    "model": "Bootcut",
+    "category": "jean",
+    "garment": "jeans",
+    "featured": true,
+    "isNew": true,
+    "price": 2490,
+    "oldPrice": 2890,
+    "colors": [
+      { "name": "Raw Indigo", "hex": "#2e4370" },
+      { "name": "Faded Black", "hex": "#1c1c22" }
+    ],
+    "sizes": ["W28/L30", "W29/L30", "W30/L30", "W30/L32", "W31/L32", "W32/L32", "W33/L34", "W34/L34", "W36/L34"],
+    "stock": {
+      "W28/L30": 3, "W29/L30": 5, "W30/L30": 7, "W30/L32": 9, "W31/L32": 6,
+      "W32/L32": 8, "W33/L34": 4, "W34/L34": 5, "W36/L34": 2
+    },
+    "palette": { "main": "#2e4370", "dark": "#1b2a4a", "light": "#48628f", "stitch": "#e0913c" },
+    "description": "1990'lardan ilham alan gerçek bootcut kalıbımız; kalçadan diz hafif daralıp paçada açılan klasik siluet. 13.5 oz rigid denim, yıkama sonrası yumuşayan yapı.",
+    "features": [
+      "13.5 oz rigid denim, %100 pamuk",
+      "Çapraz dikişli arka cep ve pirinç perçin detayı",
+      "Orta bel, kalçadan hafif oturan fit",
+      "Paça açılımı 24-28 cm arası (bedene göre)",
+      "Ham denim — ilk kullanımda yaklaşık %2-3 çekme"
+    ],
+    "sizeChart": {
+      "unit": "cm",
+      "note": "Ölçüler ham denim üzerinde manuel alınmıştır, yıkanmış üründe ±1 cm fark olabilir.",
+      "columns": ["Beden", "Bel", "Basen", "Boy", "Paça Genişliği"],
+      "rows": [
+        ["W28/L30", "72", "92", "103", "23"],
+        ["W29/L30", "74,5", "94", "103", "23,5"],
+        ["W30/L30", "77", "96", "104", "24"],
+        ["W30/L32", "77", "96", "109", "24"],
+        ["W31/L32", "79,5", "98", "109", "24,5"],
+        ["W32/L32", "82", "101", "110", "25"],
+        ["W33/L34", "84,5", "103", "114", "25,5"],
+        ["W34/L34", "87", "106", "115", "26"],
+        ["W36/L34", "92", "111", "115", "27"]
+      ]
+    },
+    "fit": "Regular — kalçadan hafif dar, paçada açılan"
+  },
+  {
+    "id": "VZ-102",
+    "slug": "baggy-carpenter-jeans-stone",
+    "name": "Baggy Carpenter Jeans",
+    "brand": "VEYRA VINTAGE Original",
+    "model": "Baggy",
+    "category": "jean",
+    "garment": "jeans",
+    "featured": true,
+    "isNew": false,
+    "price": 2290,
+    "oldPrice": null,
+    "colors": [
+      { "name": "Stone Wash", "hex": "#6d7c93" },
+      { "name": "Dark Rinse", "hex": "#243252" }
+    ],
+    "sizes": ["W29/L30", "W30/L32", "W31/L32", "W32/L32", "W34/L34", "W36/L34"],
+    "stock": { "W29/L30": 4, "W30/L32": 10, "W31/L32": 7, "W32/L32": 6, "W34/L34": 3, "W36/L34": 3 },
+    "palette": { "main": "#6d7c93", "dark": "#4c5a70", "light": "#8fa0b8", "stitch": "#e5c56a" },
+    "description": "Uçtan uca bol kalıp, çekiç halkası ve yan cep detaylarıyla iş pantolonu estetiği. Diz üstünde boşluk bırakan geniş paça.",
+    "features": [
+      "14 oz stone washed denim",
+      "Yan çekiç halkası ve çift dikişli cep",
+      "Oversize baggy fit, düşük bel oturumu",
+      "Paça 30 cm genişlik"
+    ],
+    "sizeChart": {
+      "unit": "cm",
+      "note": "Baggy kalıp; bel ölçüsü düşük oturum nedeniyle standarttan 2-3 cm dar algılanabilir.",
+      "columns": ["Beden", "Bel", "Basen", "Boy", "Paça Genişliği"],
+      "rows": [
+        ["W29/L30", "76", "102", "104", "29"],
+        ["W30/L32", "79", "105", "110", "30"],
+        ["W31/L32", "81", "107", "110", "30"],
+        ["W32/L32", "84", "110", "111", "31"],
+        ["W34/L34", "89", "115", "115", "31"],
+        ["W36/L34", "94", "120", "116", "32"]
+      ]
+    },
+    "fit": "Baggy — bol, düşük bel"
+  },
+  {
+    "id": "VZ-103",
+    "slug": "straight-rigid-jeans-black",
+    "name": "Straight Rigid Jeans",
+    "brand": "Denim Lab",
+    "model": "Straight",
+    "category": "jean",
+    "garment": "jeans",
+    "featured": false,
+    "isNew": false,
+    "price": 1990,
+    "oldPrice": 2290,
+    "colors": [
+      { "name": "Rinse Black", "hex": "#1b1d24" },
+      { "name": "Indigo", "hex": "#2b3a5c" }
+    ],
+    "sizes": ["W28/L30", "W30/L30", "W30/L32", "W32/L32", "W34/L34"],
+    "stock": { "W28/L30": 5, "W30/L30": 8, "W30/L32": 9, "W32/L32": 7, "W34/L34": 4 },
+    "palette": { "main": "#1b1d24", "dark": "#0e0f13", "light": "#33363f", "stitch": "#9aa0ad" },
+    "description": "Yıkanmamış rigid denim, yıllandıkça kişisel fade bırakan düz paça kalıp. Sade ve net siluet.",
+    "features": [
+      "13 oz rigid selvedge tarzı denim",
+      "Düz paça, 20 cm açıklık",
+      "Düğmeli flies, konik paça iç dikişi",
+      "Rigid — vücuda oturması için 2-3 hafta giyin"
+    ],
+    "sizeChart": {
+      "unit": "cm",
+      "note": "Rigid denim ilk giyimde minimal çekme yapar.",
+      "columns": ["Beden", "Bel", "Basen", "Boy", "Paça Genişliği"],
+      "rows": [
+        ["W28/L30", "73", "93", "103", "20"],
+        ["W30/L30", "78", "97", "104", "20"],
+        ["W30/L32", "78", "97", "109", "20"],
+        ["W32/L32", "83", "102", "110", "21"],
+        ["W34/L34", "88", "107", "115", "21"]
+      ]
+    },
+    "fit": "Regular straight — düz paça"
+  },
+  {
+    "id": "VZ-104",
+    "slug": "wide-leg-acid-jeans",
+    "name": "Wide Leg Acid Jeans",
+    "brand": "Denim Lab",
+    "model": "Wide Leg",
+    "category": "jean",
+    "garment": "jeans",
+    "featured": false,
+    "isNew": true,
+    "price": 2150,
+    "oldPrice": null,
+    "colors": [
+      { "name": "Acid Grey", "hex": "#7d8290" },
+      { "name": "Ecru", "hex": "#cfc6b4" }
+    ],
+    "sizes": ["W28/L30", "W30/L32", "W32/L32", "W34/L34"],
+    "stock": { "W28/L30": 4, "W30/L32": 6, "W32/L32": 6, "W34/L34": 3 },
+    "palette": { "main": "#7d8290", "dark": "#565b68", "light": "#a2a7b4", "stitch": "#e8e3d8" },
+    "description": "Asit yıkamalı, yandan bakınca akışkan duran geniş paça. 2000'ler raf arşivlerinden çıkan kalıp.",
+    "features": [
+      "12 oz asit yıkamalı denim",
+      "Yüksek bel, 32 cm paça açıklığı",
+      "Yan dikişte ikinci dikiş hattı"
+    ],
+    "sizeChart": {
+      "unit": "cm",
+      "note": "Geniş paça kalıbı; boy uzunluğu topuklu ayakkabıyla dikkate alınmalıdır.",
+      "columns": ["Beden", "Bel", "Basen", "Boy", "Paça Genişliği"],
+      "rows": [
+        ["W28/L30", "74", "98", "104", "31"],
+        ["W30/L32", "79", "103", "110", "32"],
+        ["W32/L32", "84", "108", "111", "33"],
+        ["W34/L34", "89", "113", "116", "33"]
+      ]
+    },
+    "fit": "Wide — yüksek bel, çok geniş paça"
+  },
+  {
+    "id": "VZ-105",
+    "slug": "slim-distressed-jeans-vintage",
+    "name": "Slim Distressed Jeans",
+    "brand": "Levi's Vintage",
+    "model": "Slim",
+    "category": "jean",
+    "garment": "jeans",
+    "featured": false,
+    "isNew": false,
+    "price": 2750,
+    "oldPrice": 3190,
+    "colors": [
+      { "name": "Mid Blue Distress", "hex": "#3c5a86" }
+    ],
+    "sizes": ["W29/L30", "W30/L30", "W30/L32", "W31/L32", "W32/L32"],
+    "stock": { "W29/L30": 3, "W30/L30": 5, "W30/L32": 6, "W31/L32": 4, "W32/L32": 5 },
+    "palette": { "main": "#3c5a86", "dark": "#27405f", "light": "#5f7fa9", "stitch": "#e0913c" },
+    "description": "El işçiliğiyle yıpratılmış diz bölgesi, arka cepte klasik tebeşir izleri. Dar kalıp, esnek yapı.",
+    "features": [
+      "Elastan karışımı %98 pamuk / %2 likra",
+      "El işçiliği distress detayları",
+      "Slim fit, bilek üstünde biter"
+    ],
+    "sizeChart": {
+      "unit": "cm",
+      "note": "Slim kalıp; iki beden arasındaysanız büyük bedeni tercih edin.",
+      "columns": ["Beden", "Bel", "Basen", "Boy", "Paça Genişliği"],
+      "rows": [
+        ["W29/L30", "75", "93", "103", "17"],
+        ["W30/L30", "78", "95", "104", "17,5"],
+        ["W30/L32", "78", "95", "109", "17,5"],
+        ["W31/L32", "80", "97", "109", "18"],
+        ["W32/L32", "83", "100", "110", "18"]
+      ]
+    },
+    "fit": "Slim — dar, esnek"
+  },
+  {
+    "id": "VZ-106",
+    "slug": "90s-loose-jeans-stone",
+    "name": "90s Loose Jeans",
+    "brand": "Wrangler",
+    "model": "Loose",
+    "category": "jean",
+    "garment": "jeans",
+    "featured": false,
+    "isNew": false,
+    "price": 2390,
+    "oldPrice": null,
+    "colors": [
+      { "name": "Vintage Stone", "hex": "#8a93a4" },
+      { "name": "Deep Indigo", "hex": "#26355a" }
+    ],
+    "sizes": ["W30/L32", "W32/L32", "W34/L34", "W36/L34"],
+    "stock": { "W30/L32": 6, "W32/L32": 7, "W34/L34": 5, "W36/L34": 4 },
+    "palette": { "main": "#8a93a4", "dark": "#616a7c", "light": "#aab2c1", "stitch": "#f0e6d2" },
+    "description": "90'ler kovboy paçası: geniş oturum, düz inen bacak, yıpratılmış taş yıkama.",
+    "features": [
+      "14 oz taş yıkamalı denim",
+      "Loose straight fit",
+      "Geniş paça 27 cm"
+    ],
+    "sizeChart": {
+      "unit": "cm",
+      "note": "",
+      "columns": ["Beden", "Bel", "Basen", "Boy", "Paça Genişliği"],
+      "rows": [
+        ["W30/L32", "80", "104", "110", "26"],
+        ["W32/L32", "85", "109", "111", "27"],
+        ["W34/L34", "90", "114", "116", "27"],
+        ["W36/L34", "95", "119", "116", "28"]
+      ]
+    },
+    "fit": "Loose — geniş, düz inen"
+  },
+  {
+    "id": "VZ-107",
+    "slug": "selvedge-flare-jeans",
+    "name": "Selvedge Flare Jeans",
+    "brand": "Denim Lab",
+    "model": "Flare",
+    "category": "jean",
+    "garment": "jeans",
+    "featured": true,
+    "isNew": false,
+    "price": 2890,
+    "oldPrice": null,
+    "colors": [
+      { "name": "Dark Indigo", "hex": "#22304f" }
+    ],
+    "sizes": ["W28/L30", "W30/L32", "W32/L32"],
+    "stock": { "W28/L30": 3, "W30/L32": 5, "W32/L32": 4 },
+    "palette": { "main": "#22304f", "dark": "#141d31", "light": "#3d4f74", "stitch": "#d98a2b" },
+    "description": "Japon dokuma selvedge kumaş, dizden sonra belirgin açılan flare paça. Arka cepte turuncu selvedge etiketi.",
+    "features": [
+      "14.5 oz selvedge denim",
+      "Dizden sonra flare açılan paça",
+      "El dikişi arka cep, selvedge kimlik kartı"
+    ],
+    "sizeChart": {
+      "unit": "cm",
+      "note": "Flare kalıbı dizden sonra genişler; boy ölçüsü topuktan itibaren alınmıştır.",
+      "columns": ["Beden", "Bel", "Basen", "Boy", "Paça Genişliği"],
+      "rows": [
+        ["W28/L30", "73", "94", "104", "26"],
+        ["W30/L32", "78", "99", "110", "28"],
+        ["W32/L32", "83", "104", "111", "29"]
+      ]
+    },
+    "fit": "Flare — dizden sonra açılan"
+  },
+  {
+    "id": "VZ-201",
+    "slug": "vintage-trucker-jacket",
+    "name": "Vintage Trucker Jacket",
+    "brand": "Levi's Vintage",
+    "model": "Trucker",
+    "category": "dis-giyim",
+    "garment": "jacket",
+    "featured": true,
+    "isNew": false,
+    "price": 3250,
+    "oldPrice": 3690,
+    "colors": [
+      { "name": "Mid Wash", "hex": "#41608e" },
+      { "name": "Bleached", "hex": "#93a2b8" }
+    ],
+    "sizes": ["S", "M", "L", "XL"],
+    "stock": { "S": 4, "M": 7, "L": 6, "XL": 3 },
+    "palette": { "main": "#41608e", "dark": "#2a4166", "light": "#6785af", "stitch": "#e0913c" },
+    "description": "Kısa kesim, iki göğüs cebi, konik bel. Yıllanmış orta yıkama, omuzlarda doğal solma.",
+    "features": [
+      "12.5 oz denim, konik bel kesim",
+      "Çift göğüs cebi, metal düğme",
+      "İç tarafta yama cebe"
+    ],
+    "sizeChart": {
+      "unit": "cm",
+      "note": "Oversize değil; klasik regular kesim. Katmanlı giymek isterseniz bir beden büyük seçin.",
+      "columns": ["Beden", "Göğüs", "Boy", "Kol"],
+      "rows": [
+        ["S", "104", "60", "60"],
+        ["M", "110", "62", "61"],
+        ["L", "116", "64", "62"],
+        ["XL", "122", "66", "63"]
+      ]
+    },
+    "fit": "Regular — kısa kesim"
+  },
+  {
+    "id": "VZ-202",
+    "slug": "washed-denim-overshirt",
+    "name": "Washed Denim Overshirt",
+    "brand": "Reworked",
+    "model": "Overshirt",
+    "category": "dis-giyim",
+    "garment": "jacket",
+    "featured": false,
+    "isNew": true,
+    "price": 1990,
+    "oldPrice": null,
+    "colors": [
+      { "name": "Charcoal Wash", "hex": "#3a3f4a" }
+    ],
+    "sizes": ["S", "M", "L", "XL"],
+    "stock": { "S": 5, "M": 6, "L": 6, "XL": 4 },
+    "palette": { "main": "#3a3f4a", "dark": "#24272e", "light": "#565d6b", "stitch": "#c9b48a" },
+    "description": "Gömlek yaka, düşük omuz, cepli overshirt. İnce denim olduğu gibi de, üstüne giyilebilir.",
+    "features": [
+      "9 oz ince denim",
+      "Gömlek yaka, iki göğüs cebi",
+      "Düşük omuz, bol kesim"
+    ],
+    "sizeChart": {
+      "unit": "cm",
+      "note": "",
+      "columns": ["Beden", "Göğüs", "Boy", "Kol"],
+      "rows": [
+        ["S", "112", "68", "58"],
+        ["M", "118", "70", "59"],
+        ["L", "124", "72", "60"],
+        ["XL", "130", "74", "61"]
+      ]
+    },
+    "fit": "Oversized — düşük omuz"
+  },
+  {
+    "id": "VZ-301",
+    "slug": "washed-heavy-hoodie-black",
+    "name": "Washed Heavy Hoodie",
+    "brand": "VEYRA VINTAGE Original",
+    "model": "Hoodie",
+    "category": "ust-giyim",
+    "garment": "hoodie",
+    "featured": true,
+    "isNew": true,
+    "price": 1690,
+    "oldPrice": 1890,
+    "colors": [
+      { "name": "Washed Black", "hex": "#16171b" },
+      { "name": "Vintage Grey", "hex": "#565b63" }
+    ],
+    "sizes": ["S", "M", "L", "XL", "XXL"],
+    "stock": { "S": 6, "M": 9, "L": 9, "XL": 6, "XXL": 3 },
+    "palette": { "main": "#16171b", "dark": "#0b0c0e", "light": "#2b2d33", "stitch": "#8b8f99" },
+    "description": "480 gr ağır penye, pigment boyalı ve yıkanmış. Dikişlerinde doğal solma, göğüste küçük iç içe V logosu.",
+    "features": [
+      "480 gsm heavyweight fleece",
+      "Pigment boya + vintage yıkama",
+      "Çift katlı kapüşon, baggy kollu",
+      "İç tepe etiketi dokuma"
+    ],
+    "sizeChart": {
+      "unit": "cm",
+      "note": "Heavyweight kumaş ilk yıkamada ±1 cm çekebilir.",
+      "columns": ["Beden", "Göğüs", "Boy", "Kol"],
+      "rows": [
+        ["S", "116", "66", "58"],
+        ["M", "122", "69", "59"],
+        ["L", "128", "72", "60"],
+        ["XL", "134", "75", "61"],
+        ["XXL", "140", "78", "62"]
+      ]
+    },
+    "fit": "Boxy — geniş gövde, kısa boy"
+  },
+  {
+    "id": "VZ-302",
+    "slug": "boxy-graphic-tee-archive",
+    "name": "Boxy Graphic Tee",
+    "brand": "Street Archives",
+    "model": "Tee",
+    "category": "ust-giyim",
+    "garment": "tee",
+    "featured": false,
+    "isNew": false,
+    "price": 890,
+    "oldPrice": 1090,
+    "colors": [
+      { "name": "Off White", "hex": "#e9e5dc" },
+      { "name": "Black", "hex": "#141414" }
+    ],
+    "sizes": ["S", "M", "L", "XL"],
+    "stock": { "S": 8, "M": 12, "L": 12, "XL": 7 },
+    "palette": { "main": "#e9e5dc", "dark": "#c3beb2", "light": "#f6f3ec", "stitch": "#141414" },
+    "description": "240 gr tok penye, kare kesim. Ön göğüste arşiv logosu, arkada küçük etiket baskısı.",
+    "features": [
+      "240 gsm %100 pamuk",
+      "Boxy fit, omuz düşmeli",
+      "Su bazlı serigrafi baskı"
+    ],
+    "sizeChart": {
+      "unit": "cm",
+      "note": "",
+      "columns": ["Beden", "Göğüs", "Boy", "Kol"],
+      "rows": [
+        ["S", "104", "68", "20"],
+        ["M", "110", "71", "21"],
+        ["L", "116", "74", "22"],
+        ["XL", "122", "77", "23"]
+      ]
+    },
+    "fit": "Boxy — kare kesim"
+  },
+  {
+    "id": "VZ-401",
+    "slug": "five-panel-denim-cap",
+    "name": "5-Panel Denim Cap",
+    "brand": "VEYRA VINTAGE Original",
+    "model": "Cap",
+    "category": "aksesuar",
+    "garment": "cap",
+    "featured": false,
+    "isNew": false,
+    "price": 590,
+    "oldPrice": null,
+    "colors": [
+      { "name": "Indigo", "hex": "#2c3d63" },
+      { "name": "Washed Grey", "hex": "#6a6f7a" }
+    ],
+    "sizes": ["Tek Beden"],
+    "stock": { "Tek Beden": 24 },
+    "palette": { "main": "#2c3d63", "dark": "#1a2540", "light": "#495c85", "stitch": "#e0913c" },
+    "description": "Denim beşli panel şapka, arkada metal toka. Önünde minik dokuma logo.",
+    "features": [
+      "Denim dış yüzey, pamuk astar",
+      "Ayarlanabilir metal toka",
+      "Önünde 3 cm dokuma etiket"
+    ],
+    "sizeChart": {
+      "unit": "cm",
+      "note": "Tek beden; baş çevresi 54-60 cm arası ayarlanabilir.",
+      "columns": ["Beden", "Baş Çevresi", "Kep Uzunluğu"],
+      "rows": [["Tek Beden", "54-60", "17"]]
+    },
+    "fit": "Adjustable"
+  }
+]

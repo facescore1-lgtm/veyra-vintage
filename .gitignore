@@ -1,0 +1,7 @@
+node_modules/
+data/settings.json
+data/orders.json
+public/img/uploads/*
+!public/img/uploads/.gitkeep
+*.log
+.env

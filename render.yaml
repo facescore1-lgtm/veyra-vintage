@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: veyra-vintage
+    runtime: node
+    plan: free
+    startCommand: node server.js
+    healthCheckPath: /api/health
+    envVars:
+      - key: ADMIN_PASSWORD
+        generateValue: true

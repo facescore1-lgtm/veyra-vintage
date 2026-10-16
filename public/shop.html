@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Koleksiyon — VEYRA VINTAGE</title>
+<link rel="stylesheet" href="/css/style.css">
+</head>
+<body data-nav="shop">
+
+<div class="container">
+  <div class="page-head">
+    <div class="eyebrow">Koleksiyon</div>
+    <h1 id="page-title">Tüm Ürünler</h1>
+    <p id="page-sub">Beden, marka ve modele göre filtrele</p>
+  </div>
+
+  <div class="shop-layout">
+    <aside class="filters" id="filters">
+      <div class="f-head"><span>Filtreler</span><button class="icon-btn" id="clear-filters" style="font-size:10px">Temizle</button></div>
+
+      <div class="f-group">
+        <h4>Kategori</h4>
+        <div class="chips" id="f-category"></div>
+      </div>
+
+      <div class="f-group">
+        <h4>Beden</h4>
+        <div class="chips" id="f-size"></div>
+      </div>
+
+      <div class="f-group">
+        <h4>Marka</h4>
+        <div id="f-brand"></div>
+      </div>
+
+      <div class="f-group">
+        <h4>Model / Kalıp</h4>
+        <div id="f-model"></div>
+      </div>
+    </aside>
+
+    <div>
+      <div class="shop-bar">
+        <div style="display:flex;gap:14px;align-items:center">
+          <button class="btn btn-ghost btn-sm filters-toggle" id="filters-toggle">Filtreler</button>
+          <span class="count" id="result-count">0 ürün</span>
+        </div>
+        <div class="sort">
+          <label class="count">Sırala</label>
+          <select id="sort">
+            <option value="featured">Önerilen</option>
+            <option value="new">Yeni Gelenler</option>
+            <option value="price_asc">Fiyat: Artan</option>
+            <option value="price_desc">Fiyat: Azalan</option>
+          </select>
+        </div>
+      </div>
+      <div class="active-filters" id="active-filters"></div>
+      <div class="grid" id="grid"></div>
+    </div>
+  </div>
+</div>
+
+<script src="/js/app.js"></script>
+<script src="/js/shop.js"></script>
+</body>
+</html>
